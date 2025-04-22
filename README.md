@@ -32,7 +32,8 @@ This plot shows the convergence of the solution as the polynomial order (p) of t
 ![p-Refinement Plot](figs/errors.png)
 
 ### Where FEM fails?
-
+* Choosing the solver type can also be important: Even having a fine mesh but doesn't guarantee convergence. for example here I have used Q2 elements with 6k dofs but with `gamg` preconditioner:
+![gamg](figs/deflection-gamg.png)
 * Using a coarse mesh with linear elements (P1) will fail to converge to the analytical solution.
 ![P1 Mesh](figs/10-5-P-2-1-CG-HYPRE.png)
 ## How to Run
