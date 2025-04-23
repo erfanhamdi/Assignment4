@@ -19,7 +19,7 @@ y = (-rho*g/(24*E*I))*(x**4 - 2*length*x**3 + length**3*x)
 
 ## Simulation vs. Analytical Results
 
-This plot compares the deflection obtained from the FEM simulation with the analytical solution using the quadratic bilinear elements.
+This plot compares the deflection obtained from the FEM simulation with the analytical solution using the quadratic quadrilateral elements.
 
 ![Analytical vs Simulation Plot](figs/deflection.png)
 
