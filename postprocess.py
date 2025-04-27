@@ -23,7 +23,7 @@ def main():
     for element_type in element_types:
         for element_degree in element_degrees:
             for quadrature_degree in quadrature_degrees:
-                results = glob.glob(f"/projectnb/me700/students/erfan/4-2/results/*element_type_{element_type}_element_degree_{element_degree}_quadrature_degree_{quadrature_degree}/dofs_*u_values.npy")
+                results = glob.glob(f"./results/*element_type_{element_type}_element_degree_{element_degree}_quadrature_degree_{quadrature_degree}/dofs_*u_values.npy")
                 # sort the results by dofs
                 results.sort(key=lambda x: int(x.split("/")[-1].split("_")[1]))
                 errors_list = []

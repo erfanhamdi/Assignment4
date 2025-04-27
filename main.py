@@ -15,7 +15,7 @@ arg_parser.add_argument("--Ny", type=int, default=10)
 arg_parser.add_argument("--element_type", type=str, default='P')
 arg_parser.add_argument("--element_degree", type=int, default=2)
 arg_parser.add_argument("--quadrature_degree", type=int, default=2)
-arg_parser.add_argument("--output_dir", type=str, default="/projectnb/me700/students/erfan/4-2/results")
+arg_parser.add_argument("--output_dir", type=str, default="./results")
 
 args = arg_parser.parse_args()
 if args.element_type == 'P':
